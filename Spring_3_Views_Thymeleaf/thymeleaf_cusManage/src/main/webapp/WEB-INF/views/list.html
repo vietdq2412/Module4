@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/layout::head">
+    <title>customer list</title>
+</head>
+<body>
+<nav th:replace="/layout::nav"></nav>
+<div class="container">
+<table id="customers" border="1">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Address</th>
+        <th style="width: 15%">Option</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="customer : ${customerList} ">
+        <td th:text="${customer.getName()}" style="display: table-cell">sd</td>
+        <td th:text="${customer.getEmail()}"></td>
+        <td th:text="${customer.getAddress()}"></td>
+        <td>
+            <a href="/customer/delete"><button>Delete</button></a>
+            <button th:onclick="">Edit</button>
+        </td>
+    </tr>
+    </tbody>
+</table>
+</div>
+<footer th:replace="/layout::footer" style="position: fixed; margin-bottom: 10px"></footer>
+</body>
+</html>
