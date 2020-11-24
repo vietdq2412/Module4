@@ -1,8 +1,8 @@
 package com.codegym.demo;
 
 import com.codegym.demo.formater.CategoryFormatter;
-import com.codegym.demo.service.IProductService;
-import com.codegym.demo.service.ProductService;
+import com.codegym.demo.service.product.IProductService;
+import com.codegym.demo.service.product.ProductService;
 import com.codegym.demo.service.category.CategoryService;
 import com.codegym.demo.service.category.ICategorySevice;
 import org.springframework.beans.BeansException;

@@ -2,7 +2,7 @@ package com.codegym.demo.controller;
 
 import com.codegym.demo.model.Category;
 import com.codegym.demo.model.Product;
-import com.codegym.demo.service.IProductService;
+import com.codegym.demo.service.product.IProductService;
 import com.codegym.demo.service.category.ICategorySevice;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

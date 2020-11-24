@@ -1,10 +1,11 @@
-package com.codegym.demo.service;
+package com.codegym.demo.service.product;
 
 import com.codegym.demo.model.Product;
 import com.codegym.demo.repo.IRepo;
+import com.codegym.demo.service.product.IProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 
-public class ProductService implements IProductService{
+public class ProductService implements IProductService {
     @Autowired
     private IRepo productRepo;
 
